@@ -1,9 +1,17 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link';
+import axios from 'axios';
 const inter = Inter({ subsets: ['latin'] })
+
+function getLanguagesClick () {
+      axios.post('/api/getLanguages')
+      .then((response) => {
+        console.log(response)
+  })
+  .catch((e) => { console.log(e)}
+  )}
 
 export default function Home2() {
   return (
@@ -16,6 +24,7 @@ export default function Home2() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <h1>Yo Bitch2222</h1>
+        <button onClick={e => getLanguagesClick()} >Get Languages</button>
         <Link href="/">this page!</Link>
       </main>
     </>

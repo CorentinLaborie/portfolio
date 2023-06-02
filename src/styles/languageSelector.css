@@ -1,0 +1,11 @@
+.languageSelector_container{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  height: 40px;
+}
+
+.languageSelector_space .ant-btn{
+  all : unset;
+}
