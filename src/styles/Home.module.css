@@ -1,19 +1,41 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  margin : 2px;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  margin: 10px;
+}
+
+.titre {
+  text-align: center;
+}
+
+.home_Row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 768px;
+}
+
+.home_first{
+  width: 180px;
+}
+
+.home_second{
+  max-width: 375px;
+  height: 70%;
 }
 
 /* Mobile */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
+@media (min-width: 769px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
   }

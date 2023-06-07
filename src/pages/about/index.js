@@ -13,7 +13,7 @@ function getLanguagesClick () {
   .catch((e) => { console.log(e)}
   )}
 
-export default function Home2() {
+export default function About() {
   return (
     <>
       <Head>
@@ -23,9 +23,9 @@ export default function Home2() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <h1>Yo Bitch2222</h1>
+        <h1>PAGE 2 EH OUAIS</h1>
         <button onClick={e => getLanguagesClick()} >Get Languages</button>
-        <Link href="/">this page!</Link>
+        <Link href="/">go to page 1</Link>
       </main>
     </>
   )
